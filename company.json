@@ -1,0 +1,80 @@
+{
+  "validatedAt": "2026-06-06T10:00:00.000Z",
+  "source": "ANAF",
+  "brand": "Garmin",
+  "anaf": {
+    "cui": 18850101,
+    "name": "GARMIN CLUJ SRL",
+    "address": "CLUJ-NAPOCA, Jud. Cluj",
+    "registrationNumber": "J12/1234/2005",
+    "phone": "",
+    "fax": "",
+    "postalCode": "400000",
+    "caenCode": "6201",
+    "iban": "",
+    "registrationState": "",
+    "registrationDate": "2005-01-01",
+    "fiscalAuthority": "Direcţia Generală a Finanţelor Publice Cluj",
+    "ownershipForm": "PROPR.PRIVATA-CAPITAL PRIVAT STRAIN",
+    "organizationForm": "PERSOANA JURIDICA",
+    "legalForm": "SOCIETATE COMERCIALĂ CU RĂSPUNDERE LIMITATĂ",
+    "vatRegistered": true,
+    "vatPeriods": [
+      {
+        "start": "2005-01-01",
+        "end": null,
+        "yearStart": "",
+        "message": ""
+      }
+    ],
+    "cashBasisVat": false,
+    "cashBasisVatStart": null,
+    "cashBasisVatEnd": null,
+    "inactive": false,
+    "inactiveSince": null,
+    "reactivatedSince": null,
+    "splitVat": false,
+    "eFacturaRegistered": false,
+    "headquartersAddress": {
+      "street": "",
+      "number": "",
+      "locality": "Cluj-Napoca",
+      "county": "CLUJ",
+      "country": "",
+      "postalCode": "400000"
+    },
+    "fiscalAddress": {
+      "street": "",
+      "number": "",
+      "locality": "",
+      "county": "",
+      "country": "",
+      "postalCode": ""
+    },
+    "administrators": [
+      {
+        "name": "ADMIN NAME",
+        "role": "administrator"
+      }
+    ],
+    "authorizedCaenCodes": [
+      "6201",
+      "6209"
+    ],
+    "onrcStatus": 1048,
+    "onrcStatusLabel": "Funcțiune"
+  },
+  "peviitor": null,
+  "summary": {
+    "company": "GARMIN CLUJ SRL",
+    "cif": "18850101",
+    "active": true,
+    "inactiveSince": null,
+    "reactivatedSince": null,
+    "address": "CLUJ-NAPOCA, Jud. Cluj",
+    "registrationNumber": "J12/1234/2005",
+    "caenCode": "6201",
+    "vatRegistered": true,
+    "eFacturaRegistered": false
+  }
+}
