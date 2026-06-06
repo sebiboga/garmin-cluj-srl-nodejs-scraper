@@ -1,5 +1,6 @@
 import { jest } from '@jest/globals';
 import dotenv from 'dotenv';
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -16,6 +17,9 @@ function itIfSolr(name, fn, timeout) {
 }
 
 beforeAll(() => {
+  if (fs.existsSync('tmp/company.json')) {
+    fs.unlinkSync('tmp/company.json');
+  }
   if (HAS_SOLR) {
     process.env.SOLR_AUTH = process.env.SOLR_AUTH;
   }

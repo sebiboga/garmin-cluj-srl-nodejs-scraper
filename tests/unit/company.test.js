@@ -71,6 +71,9 @@ describe('company.js', () => {
   afterAll(() => {
     delete process.env.SOLR_AUTH;
     restoreCompanyJson();
+    if (fs.existsSync(COMPANY_JSON_PATH)) {
+      fs.unlinkSync(COMPANY_JSON_PATH);
+    }
   });
 
   beforeEach(() => {
