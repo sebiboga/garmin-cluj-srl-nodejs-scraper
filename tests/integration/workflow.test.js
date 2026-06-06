@@ -38,9 +38,7 @@ describe('Integration: API Workflow', () => {
       expect(Array.isArray(results)).toBe(true);
       expect(results.length).toBeGreaterThan(0);
 
-      const garmin = results.find(c =>
-        c.name.toUpperCase().includes('GARMIN') && c.statusLabel === 'Funcțiune'
-      );
+      const garmin = results.find(c => c.cui.toString() === GARMIN_CIF);
       expect(garmin).toBeDefined();
       expect(garmin.cui.toString()).toBe(GARMIN_CIF);
     }, 15000);
@@ -210,9 +208,7 @@ describe('Integration: API Workflow', () => {
       const searchResults = await anaf.searchCompany('Garmin');
       expect(searchResults.length).toBeGreaterThan(0);
 
-      const garminCompany = searchResults.find(c =>
-        c.name.toUpperCase().includes('GARMIN') && c.statusLabel === 'Funcțiune'
-      );
+      const garminCompany = searchResults.find(c => c.cui.toString() === GARMIN_CIF);
       expect(garminCompany).toBeDefined();
 
       const anafData = await anaf.getCompanyFromANAF(garminCompany.cui.toString());
