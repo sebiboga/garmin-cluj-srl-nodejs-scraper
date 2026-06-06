@@ -4,9 +4,9 @@ on:
   schedule:
     - cron: '0 7 * * *'
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
     types: [opened, synchronize, reopened]
   workflow_dispatch:
     inputs:
